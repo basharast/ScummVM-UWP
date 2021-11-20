@@ -44,11 +44,14 @@ Visit http://www.scummvm.org
 
 # Build and compile
 
+- You can find the Visual Studio Solution at <b>ScummVM\dists\winuwp</b>
+
 -For libraries read the info in ScummVM Libs folder
 
 -The current release built using V.S.2019
 
 -Once you downloaded the project and setup the libraries location you will be able to build the project
+
 
 
 # Future
