@@ -29,4 +29,4 @@ These libraries complied only for arm and x86
 you may need to compile them for x64 if you want to compile the project for x64
 
 
-For more details about the libraries <a href="https://wiki.scummvm.org/index.php/Compiling_ScummVM/Visual_Studio">Click here</a>
+For more details <a href="https://wiki.scummvm.org/index.php/Compiling_ScummVM/Visual_Studio">Click here</a>
