@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>USE_VORBIS;USE_MAD;USE_ZLIB;USE_FLAC;USE_PNG;USE_FREETYPE2;USE_TRANSLATION;USE_DETECTLANG;USE_SCALERS;USE_HQ_SCALERS;ENABLE_VKEYBD;ENABLE_QUEEN;ENABLE_SKY;ENABLE_SCUMM;ENABLE_SCUMM_7_8;ENABLE_HE;ENABLE_SWORD1;ENABLE_SWORD2;ENABLE_KYRA;ENABLE_LOL;ENABLE_EOB;ENABLE_LURE;ENABLE_AGI;ENABLE_AGOS;ENABLE_AGOS2;ENABLE_GOB;ENABLE_SCI;ENABLE_TINSEL;ENABLE_TOON;USE_SDL_RESIZABLE_WINDOW;SDL_BACKEND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

@@ -1,0 +1,62 @@
+Configure run on Fri Nov 19 05:02:46 +04 2021
+Invocation command line was:
+./configure 
+Saved environment variables:
+LDFLAGS="" CXX="" CXXFLAGS="" CPPFLAGS="" ASFLAGS="" WINDRESFLAGS="" SDL_CONFIG=""
+testing compiler: g++
+success testing compiler: g++
+
+int main(void) {
+	#ifndef __GNUC__
+	syntax error
+	#endif
+	return 0;
+}
+
+g++    -g ./scummvm-conf.cpp -o ./scummvm-conf.exe -c
+return code: 0
+
+
+int main(void) {
+	#ifndef __INTEL_COMPILER
+	syntax error
+	#endif
+	return 0;
+}
+
+g++    -g ./scummvm-conf.cpp -o ./scummvm-conf.exe -c
+./scummvm-conf.cpp: In function 'int main()':
+./scummvm-conf.cpp:3:2: error: 'syntax' was not declared in this scope
+    3 |  syntax error
+      |  ^~~~~~
+return code: 1
+
+
+int main(void) {
+	#ifndef __clang__
+	syntax error
+	#endif
+	return 0;
+}
+
+g++    -g ./scummvm-conf.cpp -o ./scummvm-conf.exe -c
+./scummvm-conf.cpp: In function 'int main()':
+./scummvm-conf.cpp:3:2: error: 'syntax' was not declared in this scope
+    3 |  syntax error
+      |  ^~~~~~
+return code: 1
+
+
+int main(int argc, char *argv[]) { if (argv == nullptr) return -1; else return 0; }
+
+g++    -g ./scummvm-conf.cpp -o ./scummvm-conf.exe -std=c++11
+return code: 0
+
+
+int main() { return 0; }
+
+g++    -g -W -Wno-unused-parameter -Wno-empty-body -pedantic -Wno-long-long ./scummvm-conf.cpp -o ./scummvm-conf.exe -Wglobal-constructors
+g++.exe: error: unrecognized command-line option '-Wglobal-constructors'; did you mean '-felide-constructors'?
+return code: 1
+
+Checking for x86_64-mingw64-strings... no

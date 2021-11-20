@@ -1,0 +1,6 @@
+MainPackage=B:\scummvm\dists\winuwp\ARM\Debug\ScummVMUniversal\ScummVMUniversal_1.8.55.0_ARM_Debug.appx
+SymbolPackage=B:\scummvm\dists\winuwp\ScummVMUniversal\ARM\Debug\Symbols\ScummVMUniversal_1.8.55.0_ARM_Debug.appxsym
+ResourcePack=B:\scummvm\dists\winuwp\ARM\Debug\ScummVMUniversal\ScummVMUniversal_1.8.55.0_scale-100.appx
+ResourcePack=B:\scummvm\dists\winuwp\ARM\Debug\ScummVMUniversal\ScummVMUniversal_1.8.55.0_scale-125.appx
+ResourcePack=B:\scummvm\dists\winuwp\ARM\Debug\ScummVMUniversal\ScummVMUniversal_1.8.55.0_scale-150.appx
+ResourcePack=B:\scummvm\dists\winuwp\ARM\Debug\ScummVMUniversal\ScummVMUniversal_1.8.55.0_scale-400.appx

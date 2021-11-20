@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5F521E61-61F3-4D28-9C63-9612ADA5BC3B}</ProjectGuid>
+    <RootNamespace>tinsel</RootNamespace>
+    <Keyword>StaticLibrary</Keyword>
+    <DefaultLanguage>en-GB</DefaultLanguage>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Release.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Debug.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Release.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Debug.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Analysis|Win32'">
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='LLVM|Win32'">
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Analysis|x64'">
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='LLVM|x64'">
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <SDLCheck>true</SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\engines\tinsel\actors.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\adpcm.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\anim.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\background.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\bg.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\bmv.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\cliprect.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\config.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\cursor.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\debugger.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\detection.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\dialogs.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\drives.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\effect.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\events.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\faders.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\font.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\graphics.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\handle.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\heapmem.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\mareels.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\move.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\multiobj.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\music.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\object.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\palette.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\pcode.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\pdisplay.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\play.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\polygons.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\rince.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\saveload.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\savescn.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\scene.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\sched.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\scn.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\scroll.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\sound.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\strres.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\sysvar.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\text.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\timers.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\tinlib.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\tinsel.cpp" />
+    <ClCompile Include="..\..\engines\tinsel\token.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\engines\tinsel\actors.h" />
+    <ClInclude Include="..\..\engines\tinsel\adpcm.h" />
+    <ClInclude Include="..\..\engines\tinsel\anim.h" />
+    <ClInclude Include="..\..\engines\tinsel\background.h" />
+    <ClInclude Include="..\..\engines\tinsel\bmv.h" />
+    <ClInclude Include="..\..\engines\tinsel\cliprect.h" />
+    <ClInclude Include="..\..\engines\tinsel\config.h" />
+    <ClInclude Include="..\..\engines\tinsel\cursor.h" />
+    <ClInclude Include="..\..\engines\tinsel\debugger.h" />
+    <ClInclude Include="..\..\engines\tinsel\detection_tables.h" />
+    <ClInclude Include="..\..\engines\tinsel\dialogs.h" />
+    <ClInclude Include="..\..\engines\tinsel\drives.h" />
+    <ClInclude Include="..\..\engines\tinsel\dw.h" />
+    <ClInclude Include="..\..\engines\tinsel\events.h" />
+    <ClInclude Include="..\..\engines\tinsel\faders.h" />
+    <ClInclude Include="..\..\engines\tinsel\film.h" />
+    <ClInclude Include="..\..\engines\tinsel\font.h" />
+    <ClInclude Include="..\..\engines\tinsel\graphics.h" />
+    <ClInclude Include="..\..\engines\tinsel\handle.h" />
+    <ClInclude Include="..\..\engines\tinsel\heapmem.h" />
+    <ClInclude Include="..\..\engines\tinsel\mareels.h" />
+    <ClInclude Include="..\..\engines\tinsel\move.h" />
+    <ClInclude Include="..\..\engines\tinsel\multiobj.h" />
+    <ClInclude Include="..\..\engines\tinsel\music.h" />
+    <ClInclude Include="..\..\engines\tinsel\object.h" />
+    <ClInclude Include="..\..\engines\tinsel\palette.h" />
+    <ClInclude Include="..\..\engines\tinsel\pcode.h" />
+    <ClInclude Include="..\..\engines\tinsel\pdisplay.h" />
+    <ClInclude Include="..\..\engines\tinsel\pid.h" />
+    <ClInclude Include="..\..\engines\tinsel\play.h" />
+    <ClInclude Include="..\..\engines\tinsel\polygons.h" />
+    <ClInclude Include="..\..\engines\tinsel\rince.h" />
+    <ClInclude Include="..\..\engines\tinsel\savescn.h" />
+    <ClInclude Include="..\..\engines\tinsel\scene.h" />
+    <ClInclude Include="..\..\engines\tinsel\sched.h" />
+    <ClInclude Include="..\..\engines\tinsel\scn.h" />
+    <ClInclude Include="..\..\engines\tinsel\scroll.h" />
+    <ClInclude Include="..\..\engines\tinsel\sound.h" />
+    <ClInclude Include="..\..\engines\tinsel\strres.h" />
+    <ClInclude Include="..\..\engines\tinsel\sysvar.h" />
+    <ClInclude Include="..\..\engines\tinsel\text.h" />
+    <ClInclude Include="..\..\engines\tinsel\timers.h" />
+    <ClInclude Include="..\..\engines\tinsel\tinlib.h" />
+    <ClInclude Include="..\..\engines\tinsel\tinsel.h" />
+    <ClInclude Include="..\..\engines\tinsel\token.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\engines\tinsel\module.mk" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

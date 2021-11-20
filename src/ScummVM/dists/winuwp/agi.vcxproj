@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C00A3DFC-1F3D-487F-B0C7-F7E02E159477}</ProjectGuid>
+    <RootNamespace>agi</RootNamespace>
+    <Keyword>StaticLibrary</Keyword>
+    <DefaultLanguage>en-GB</DefaultLanguage>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Release.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Debug.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Release.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Debug.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4510;4610;;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4510;4610;;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4510;4610;;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <SDLCheck>true</SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4510;4610;;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\engines\agi\agi.cpp" />
+    <ClCompile Include="..\..\engines\agi\checks.cpp" />
+    <ClCompile Include="..\..\engines\agi\console.cpp" />
+    <ClCompile Include="..\..\engines\agi\cycle.cpp" />
+    <ClCompile Include="..\..\engines\agi\detection.cpp" />
+    <ClCompile Include="..\..\engines\agi\font.cpp" />
+    <ClCompile Include="..\..\engines\agi\global.cpp" />
+    <ClCompile Include="..\..\engines\agi\graphics.cpp" />
+    <ClCompile Include="..\..\engines\agi\id.cpp" />
+    <ClCompile Include="..\..\engines\agi\inv.cpp" />
+    <ClCompile Include="..\..\engines\agi\keyboard.cpp" />
+    <ClCompile Include="..\..\engines\agi\loader_v1.cpp" />
+    <ClCompile Include="..\..\engines\agi\loader_v2.cpp" />
+    <ClCompile Include="..\..\engines\agi\loader_v3.cpp" />
+    <ClCompile Include="..\..\engines\agi\logic.cpp" />
+    <ClCompile Include="..\..\engines\agi\lzw.cpp" />
+    <ClCompile Include="..\..\engines\agi\menu.cpp" />
+    <ClCompile Include="..\..\engines\agi\motion.cpp" />
+    <ClCompile Include="..\..\engines\agi\objects.cpp" />
+    <ClCompile Include="..\..\engines\agi\op_cmd.cpp" />
+    <ClCompile Include="..\..\engines\agi\op_dbg.cpp" />
+    <ClCompile Include="..\..\engines\agi\op_test.cpp" />
+    <ClCompile Include="..\..\engines\agi\opcodes.cpp" />
+    <ClCompile Include="..\..\engines\agi\picture.cpp" />
+    <ClCompile Include="..\..\engines\agi\preagi.cpp" />
+    <ClCompile Include="..\..\engines\agi\preagi_mickey.cpp" />
+    <ClCompile Include="..\..\engines\agi\preagi_troll.cpp" />
+    <ClCompile Include="..\..\engines\agi\preagi_winnie.cpp" />
+    <ClCompile Include="..\..\engines\agi\saveload.cpp" />
+    <ClCompile Include="..\..\engines\agi\sound.cpp" />
+    <ClCompile Include="..\..\engines\agi\sound_2gs.cpp" />
+    <ClCompile Include="..\..\engines\agi\sound_coco3.cpp" />
+    <ClCompile Include="..\..\engines\agi\sound_midi.cpp" />
+    <ClCompile Include="..\..\engines\agi\sound_pcjr.cpp" />
+    <ClCompile Include="..\..\engines\agi\sound_sarien.cpp" />
+    <ClCompile Include="..\..\engines\agi\sprite.cpp" />
+    <ClCompile Include="..\..\engines\agi\systemui.cpp" />
+    <ClCompile Include="..\..\engines\agi\text.cpp" />
+    <ClCompile Include="..\..\engines\agi\view.cpp" />
+    <ClCompile Include="..\..\engines\agi\wagparser.cpp" />
+    <ClCompile Include="..\..\engines\agi\words.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\engines\agi\agi.h" />
+    <ClInclude Include="..\..\engines\agi\appleIIgs_timedelay_overwrite.h" />
+    <ClInclude Include="..\..\engines\agi\console.h" />
+    <ClInclude Include="..\..\engines\agi\detection_tables.h" />
+    <ClInclude Include="..\..\engines\agi\font.h" />
+    <ClInclude Include="..\..\engines\agi\graphics.h" />
+    <ClInclude Include="..\..\engines\agi\inv.h" />
+    <ClInclude Include="..\..\engines\agi\keyboard.h" />
+    <ClInclude Include="..\..\engines\agi\logic.h" />
+    <ClInclude Include="..\..\engines\agi\lzw.h" />
+    <ClInclude Include="..\..\engines\agi\menu.h" />
+    <ClInclude Include="..\..\engines\agi\mouse_cursor.h" />
+    <ClInclude Include="..\..\engines\agi\opcodes.h" />
+    <ClInclude Include="..\..\engines\agi\palette.h" />
+    <ClInclude Include="..\..\engines\agi\picture.h" />
+    <ClInclude Include="..\..\engines\agi\preagi.h" />
+    <ClInclude Include="..\..\engines\agi\preagi_mickey.h" />
+    <ClInclude Include="..\..\engines\agi\preagi_troll.h" />
+    <ClInclude Include="..\..\engines\agi\preagi_winnie.h" />
+    <ClInclude Include="..\..\engines\agi\sound.h" />
+    <ClInclude Include="..\..\engines\agi\sound_2gs.h" />
+    <ClInclude Include="..\..\engines\agi\sound_coco3.h" />
+    <ClInclude Include="..\..\engines\agi\sound_midi.h" />
+    <ClInclude Include="..\..\engines\agi\sound_pcjr.h" />
+    <ClInclude Include="..\..\engines\agi\sound_sarien.h" />
+    <ClInclude Include="..\..\engines\agi\sprite.h" />
+    <ClInclude Include="..\..\engines\agi\systemui.h" />
+    <ClInclude Include="..\..\engines\agi\text.h" />
+    <ClInclude Include="..\..\engines\agi\view.h" />
+    <ClInclude Include="..\..\engines\agi\wagparser.h" />
+    <ClInclude Include="..\..\engines\agi\words.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\engines\agi\module.mk" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

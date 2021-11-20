@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2602E73C-23A5-4E6E-BB28-2D1E505E20CB}</ProjectGuid>
+    <RootNamespace>sky</RootNamespace>
+    <Keyword>StaticLibrary</Keyword>
+    <DefaultLanguage>en-GB</DefaultLanguage>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Release.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Debug.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Release.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ScummVM_Debug.props" />
+    <Import Project="ScummVM_UWP.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <SDLCheck>true</SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\engines\sky\music\adlibchannel.cpp" />
+    <ClCompile Include="..\..\engines\sky\music\adlibmusic.cpp" />
+    <ClCompile Include="..\..\engines\sky\music\gmchannel.cpp" />
+    <ClCompile Include="..\..\engines\sky\music\gmmusic.cpp" />
+    <ClCompile Include="..\..\engines\sky\music\mt32music.cpp" />
+    <ClCompile Include="..\..\engines\sky\music\musicbase.cpp" />
+    <ClCompile Include="..\..\engines\sky\autoroute.cpp" />
+    <ClCompile Include="..\..\engines\sky\compact.cpp" />
+    <ClCompile Include="..\..\engines\sky\control.cpp" />
+    <ClCompile Include="..\..\engines\sky\debug.cpp" />
+    <ClCompile Include="..\..\engines\sky\detection.cpp" />
+    <ClCompile Include="..\..\engines\sky\disk.cpp" />
+    <ClCompile Include="..\..\engines\sky\grid.cpp" />
+    <ClCompile Include="..\..\engines\sky\hufftext.cpp" />
+    <ClCompile Include="..\..\engines\sky\intro.cpp" />
+    <ClCompile Include="..\..\engines\sky\logic.cpp" />
+    <ClCompile Include="..\..\engines\sky\mouse.cpp" />
+    <ClCompile Include="..\..\engines\sky\rnc_deco.cpp" />
+    <ClCompile Include="..\..\engines\sky\screen.cpp" />
+    <ClCompile Include="..\..\engines\sky\sky.cpp" />
+    <ClCompile Include="..\..\engines\sky\sound.cpp" />
+    <ClCompile Include="..\..\engines\sky\text.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\engines\sky\music\adlibchannel.h" />
+    <ClInclude Include="..\..\engines\sky\music\adlibmusic.h" />
+    <ClInclude Include="..\..\engines\sky\music\gmchannel.h" />
+    <ClInclude Include="..\..\engines\sky\music\gmmusic.h" />
+    <ClInclude Include="..\..\engines\sky\music\mt32music.h" />
+    <ClInclude Include="..\..\engines\sky\music\musicbase.h" />
+    <ClInclude Include="..\..\engines\sky\autoroute.h" />
+    <ClInclude Include="..\..\engines\sky\compact.h" />
+    <ClInclude Include="..\..\engines\sky\control.h" />
+    <ClInclude Include="..\..\engines\sky\debug.h" />
+    <ClInclude Include="..\..\engines\sky\disk.h" />
+    <ClInclude Include="..\..\engines\sky\grid.h" />
+    <ClInclude Include="..\..\engines\sky\intro.h" />
+    <ClInclude Include="..\..\engines\sky\logic.h" />
+    <ClInclude Include="..\..\engines\sky\mouse.h" />
+    <ClInclude Include="..\..\engines\sky\rnc_deco.h" />
+    <ClInclude Include="..\..\engines\sky\screen.h" />
+    <ClInclude Include="..\..\engines\sky\sky.h" />
+    <ClInclude Include="..\..\engines\sky\skydefs.h" />
+    <ClInclude Include="..\..\engines\sky\sound.h" />
+    <ClInclude Include="..\..\engines\sky\struc.h" />
+    <ClInclude Include="..\..\engines\sky\text.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\engines\sky\module.mk" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
