@@ -19,7 +19,7 @@ These -precompiled- libraries required to compile the project
 
 - Click Ok
 
-- Done, you now compile the project
+- Done, you can now compile the project
 
 
 # X64
