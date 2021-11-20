@@ -5,7 +5,7 @@ These -precompiled- libraries required to compile the project
 
 # Usage
 
-- Move these folders (include, bin, lib) to place on your PC
+- Move these folders (include, bin, lib) to any place on your PC
 
 - From 'Start' search for 'Enviroment'
 
