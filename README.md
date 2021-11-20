@@ -73,3 +73,7 @@ Developed by ScummVM Team
 
 Stability improvements by Bashar Astifan
 
+Tried to find the main developer for UWP port but didn't find clear name
+
+anyway the first UWP release was publish by Marius Kort
+
